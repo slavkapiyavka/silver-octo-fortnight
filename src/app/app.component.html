@@ -1,1 +1,35 @@
-<p *ngFor="let item of data">{{ item.name }}</p>
+<ul class="users-list">
+    <li *ngFor="let user of data" class="user">
+        <span class="user__id">ID: {{ user.id }}</span>
+        <p class="user__name">Name: {{ user.name }}</p>
+        <p class="user__username">Username: {{ user.username }}</p>
+        <a href="mailto:{{ user.email }}">{{ user.email }}</a>
+        <a href="tel:{{ user.phone }}">{{ user.phone }}</a>
+        <a href="{{ user.website }}">{{ user.website }}</a>
+        <p class="user__company-name">{{ user.company.name }}</p>
+        <p class="user__catch-phrase">{{ user.company.catchPhrase }}</p>
+        <p class="user__bs">{{ user.company.bs }}</p>
+    </li>
+</ul>
+
+<!-- "id": 1,
+"name": "Leanne Graham",
+"username": "Bret",
+"email": "Sincere@april.biz",
+"address": {
+  "street": "Kulas Light",
+  "suite": "Apt. 556",
+  "city": "Gwenborough",
+  "zipcode": "92998-3874",
+  "geo": {
+    "lat": "-37.3159",
+    "lng": "81.1496"
+  }
+},
+"phone": "1-770-736-8031 x56442",
+"website": "hildegard.org",
+"company": {
+  "name": "Romaguera-Crona",
+  "catchPhrase": "Multi-layered client-server neural-net",
+  "bs": "harness real-time e-markets"
+} -->
