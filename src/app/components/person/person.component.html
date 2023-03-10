@@ -1,0 +1,11 @@
+<div class="person">
+  <span class="user__id">ID: {{ personData.id }}</span>
+  <p class="user__name">Name: {{ personData.name }}</p>
+  <p class="user__username">Username: {{ personData.username }}</p>
+  <a href="mailto:{{ personData.email }}">{{ personData.email }}</a>
+  <a href="tel:{{ personData.phone }}">{{ personData.phone }}</a>
+  <a href="{{ personData.website }}">{{ personData.website }}</a>
+  <p class="user__company-name">{{ personData.company.name }}</p>
+  <p class="user__catch-phrase">{{ personData.company.catchPhrase }}</p>
+  <p class="user__bs">{{ personData.company.bs }}</p>
+</div>
