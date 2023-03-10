@@ -1,11 +1,11 @@
 <div class="person">
-  <span class="user__id">ID: {{ personData.id }}</span>
-  <p class="user__name">Name: {{ personData.name }}</p>
-  <p class="user__username">Username: {{ personData.username }}</p>
-  <a href="mailto:{{ personData.email }}">{{ personData.email }}</a>
-  <a href="tel:{{ personData.phone }}">{{ personData.phone }}</a>
-  <a href="{{ personData.website }}">{{ personData.website }}</a>
-  <p class="user__company-name">{{ personData.company.name }}</p>
-  <p class="user__catch-phrase">{{ personData.company.catchPhrase }}</p>
-  <p class="user__bs">{{ personData.company.bs }}</p>
+  <span class="person__id">ID: {{ personData.id }}</span>
+  <p class="person__name">Name: {{ personData.name }}</p>
+  <p class="person__username">Username: {{ personData.username }}</p>
+  <a class="person__email" href="mailto:{{ personData.email }}">{{ personData.email }}</a>
+  <a class="person__phone" href="tel:{{ personData.phone }}">{{ personData.phone }}</a>
+  <a class="person__website" href="{{ personData.website }}">{{ personData.website }}</a>
+  <p class="person__company-name">{{ personData.company.name }}</p>
+  <p class="person__catch-phrase">{{ personData.company.catchPhrase }}</p>
+  <p class="person__bs">{{ personData.company.bs }}</p>
 </div>
